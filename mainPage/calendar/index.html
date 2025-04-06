@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ipswich DECA</title>
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../sharedParts/topbar.css">
+    <link rel="stylesheet" href="../sharedParts/footer.css">
+    <script src="../sharedParts/loader.js"></script>
+    <script src="../sharedParts/topbar.js"></script>
+    <script src="script.js"></script>
+    <script src="serverInteraction.js"></script>
+</head>
+<body>
+    <header id="topbar"></header>
+    <div id="main">
+        <div id="calendarArea"></div>
+        <div id="eventPopup" class="hidden">
+            <h3 id="eventTitle"></h3>
+            <p id="eventTime"></p>
+            <p id="eventDescription"></p>
+            <button id="closePopup">Close</button>
+        </div>
+    </div>
+    <footer id="footer"></footer>
+</body>
+</html>

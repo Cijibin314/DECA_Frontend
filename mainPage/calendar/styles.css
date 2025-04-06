@@ -1,0 +1,40 @@
+#eventPopup {
+    position: absolute;
+    top: 20px;
+    left: 80%;
+    width: 300px;
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    display: none; /* Start hidden */
+  }
+  
+  #eventPopup h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  #eventPopup p {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+  
+  #closePopup {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  #closePopup:hover {
+    background-color: #45a049;
+  }
+  
+  /* Optional: Ensure calendar isn't blocked */
+  #calendarArea {
+    position: relative;
+  }
+  

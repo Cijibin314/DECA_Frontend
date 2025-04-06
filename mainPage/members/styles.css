@@ -1,0 +1,18 @@
+#advisors{
+    display: flex;
+    flex-direction: column;
+}
+#advisors > #bar, #students > #bar{
+    display: flex;
+    background-color: gray;
+    flex-direction: row;
+    justify-content: center;
+}
+#advisors > #people, #students > #people{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap:50px;
+}
