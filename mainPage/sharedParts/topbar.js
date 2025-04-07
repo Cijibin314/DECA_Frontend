@@ -1,7 +1,6 @@
 function goto(page){
     window.location.href = page;
 }
-
 function aboutUs(){
     goto("../aboutUs/index.html");
 }
@@ -16,4 +15,7 @@ function home(){
 }
 function members(){
     goto("../members/index.html");
+}
+function login(){
+    goto("../login/index.html");
 }
