@@ -1,0 +1,77 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Main Content Area */
+#main {
+    padding: 40px;
+}
+
+/* Top Part */
+#topPart {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#topPart h1 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#topPart p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Options Section */
+#options {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+/* Individual Option Boxes */
+.option {
+    background-color: #e1e1e1;
+    padding: 30px;
+    width: 80%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.option:hover {
+    transform: scale(1.05);
+}
+
+h2 {
+    font-size: 2rem;
+    color: #ff8c00;  /* Subtle orange color */
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    #options {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .option {
+        width: 90%;
+    }
+}

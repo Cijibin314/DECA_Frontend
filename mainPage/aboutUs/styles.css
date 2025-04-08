@@ -1,25 +1,50 @@
-#acronym{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+/* About Us Section */
+.about-section {
+    background-color: #e1e1e1;
+    border-radius: 10px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-#acronymAndPic{
-    display: flex;
-    gap: 10px;
-    flex-direction: row;
-    justify-content: space-around;
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-#wordsOfAcronym{
-    display: flex;
-    gap:10px;
-    flex-direction: column;
-    width:40%;
+
+/* About Content */
+.about-content {
+    text-align: center;
 }
-#redirect{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    gap:20px;
+
+.about-content h1 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.acronym {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff6f00;  /* Tiger orange */
+    margin-bottom: 15px;
+}
+
+.description {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.mission {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.more-info {
+    font-size: 1.1rem;
 }
