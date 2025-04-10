@@ -33,6 +33,8 @@ document.addEventListener("DOMContentLoaded", async function () {
         const res = await fetch("https://deca-backend.onrender.com/api/calendar")
         const data = await res.json();
         console.log("data: " + data)
+        document.getElementById("calendar-loader").style.display="none"
+        document.getElementById("calendar-container").style.minHeight="0px"
         return data;
     }catch(e){
         console.log("Error fetching: " + e);

@@ -68,3 +68,38 @@ body {
     font-size: 14px;
     color: red;
 }
+#login-loader {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    pointer-events: none; /* allows clicks to pass through */
+    display:none;
+  }
+  
+  .spinner {
+    position: relative;
+    width: 60px;
+    height: 60px;
+  }
+  
+  .spinner .dot {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: black;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: rotate(calc(45deg * var(--i))) translate(28px) rotate(calc(-45deg * var(--i)));
+    animation: fade 1s linear infinite;
+    animation-delay: calc(var(--i) * 0.12s);
+  }
+  
+  @keyframes fade {
+    0% { opacity: 1; background-color: black; }
+    50% { opacity: 0.2; background-color: orange; }
+    100% { opacity: 1; background-color: black; }
+  }
+  

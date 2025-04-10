@@ -9,7 +9,7 @@ function start() {
 
         const username = this.querySelector("input[type='text']").value;
         const password = this.querySelector("input[type='password']").value;
-
+        document.getElementById("login-loader").style.display = "block";
         fetch('https://deca-backend.onrender.com/api/validateUser', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
@@ -18,9 +18,11 @@ function start() {
         .then(data => {
             console.log(data);
             if (data.valid) {
+                document.getElementById("login-loader").style.display = "none";
                 errorMessage.style.display = 'none'; // Hide error message if valid
                 window.location.href = "https://cijibin314.github.io/DECA_Students/"
             } else {
+                document.getElementById("login-loader").style.display = "none";
                 errorMessage.style.display = 'block'; // Show error message if invalid
             }
         });
