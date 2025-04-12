@@ -4,56 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ipswich DECA</title>
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="../sharedParts/topbar.css">
     <link rel="stylesheet" href="../sharedParts/footer.css">
     <script src="../sharedParts/loader.js"></script>
     <script src="../sharedParts/topbar.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
-    <div id="topbar"></div>
-    <div id="blog">
-        <div class="blogPost">
-            <header class="blogTitle">Title</header>
-            <div class="blogBody">body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body </div>
-            <footer class="blogFooter">Footer footer footer</footer>
+    <header id="topbar"></header>
+    <div id="main">
+        <div id="greeting">
+            <h1>Welcome to Ipswich DECA!</h1>
+        
+            <!-- Image Carousel Section -->
+            <div class="carousel-container">
+                <div class="carousel-images">
+                    <img src="https://mail.google.com/mail/u/0?ui=2&ik=261f7c63e5&attid=0.1&permmsgid=msg-f:1829211190832964520&th=1962a9e2f0c4a3a8&view=att&zw&disp=safe" alt="Image 1">
+                    <img src="https://mail.google.com/mail/u/0?ui=2&ik=261f7c63e5&attid=0.3&permmsgid=msg-f:1829211190832964520&th=1962a9e2f0c4a3a8&view=att&zw&disp=safe" alt="Image 2">
+                    <img src="https://mail.google.com/mail/u/0?ui=2&ik=261f7c63e5&attid=0.5&permmsgid=msg-f:1829211190832964520&th=1962a9e2f0c4a3a8&view=att&zw&disp=safe" alt="Image 3">
+                    <img src="https://mail.google.com/mail/u/0?ui=2&ik=261f7c63e5&attid=0.7&permmsgid=msg-f:1829211190832964520&th=1962a9e2f0c4a3a8&view=att&zw&disp=safe" alt="Image 3">
+                    <img src="https://mail.google.com/mail/u/0?ui=2&ik=261f7c63e5&attid=0.9&permmsgid=msg-f:1829211190832964520&th=1962a9e2f0c4a3a8&view=att&zw&disp=safe" alt="Image 3">
+                    <img src="https://mail.google.com/mail/u/0?ui=2&ik=261f7c63e5&attid=0.11&permmsgid=msg-f:1829211190832964520&th=1962a9e2f0c4a3a8&view=att&zw&disp=safe" alt="Image 3">
+                    <img src="https://mail.google.com/mail/u/0?ui=2&ik=261f7c63e5&attid=0.13&permmsgid=msg-f:1829211190832964520&th=1962a9e2f0c4a3a8&view=att&zw&disp=safe" alt="Image 3">
+                    <img src="https://mail.google.com/mail/u/0?ui=2&ik=261f7c63e5&attid=0.15&permmsgid=msg-f:1829211190832964520&th=1962a9e2f0c4a3a8&view=att&zw&disp=safe" alt="Image 3">
+                    <img src="https://mail.google.com/mail/u/0?ui=2&ik=261f7c63e5&attid=0.17&permmsgid=msg-f:1829211190832964520&th=1962a9e2f0c4a3a8&view=att&zw&disp=safe" alt="Image 3">
+                    <!-- Add more images as needed -->
+                </div>
+                <button class="carousel-arrow left" onclick="moveCarousel(-1)">&#8592;</button>
+                <button class="carousel-arrow right" onclick="moveCarousel(1)">&#8594;</button>
+            </div>
+            <!-- Blog Bar -->
+            <div class="blog-bar">
+                <h2>Blog</h2>
+            </div>
+        
+            <!-- Blog Posts Section -->
+            <div id="blog">
+                <div class="blogPost">
+                    <header class="blogTitle">Title</header>
+                    <div class="blogBody">body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body </div>
+                    <footer class="blogFooter">Footer footer footer</footer>
+                </div>
+                <div class="blogPost">
+                    <header class="blogTitle">Title</header>
+                    <div class="blogBody">body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body </div>
+                    <footer class="blogFooter">Footer footer footer</footer>
+                </div>
+                <div class="blogPost">
+                    <header class="blogTitle">Title</header>
+                    <div class="blogBody">body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body </div>
+                    <footer class="blogFooter">Footer footer footer</footer>
+                </div>
+                <div class="blogPost">
+                    <header class="blogTitle">Title</header>
+                    <div class="blogBody">body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body </div>
+                    <footer class="blogFooter">Footer footer footer</footer>
+                </div>
+                <div class="blogPost">
+                    <header class="blogTitle">Title</header>
+                    <div class="blogBody">body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body </div>
+                    <footer class="blogFooter">Footer footer footer</footer>
+                </div>
+                <div class="blogPost">
+                    <header class="blogTitle">Title</header>
+                    <div class="blogBody">body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body </div>
+                    <footer class="blogFooter">Footer footer footer</footer>
+                </div>
+                <div class="blogPost">
+                    <header class="blogTitle">Title</header>
+                    <div class="blogBody">body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body </div>
+                    <footer class="blogFooter">Footer footer footer</footer>
+                </div>
+                <div class="blogPost">
+                    <header class="blogTitle">Title</header>
+                    <div class="blogBody">body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body </div>
+                    <footer class="blogFooter">Footer footer footer</footer>
+                </div>
+            </div>
         </div>
-        <div class="blogPost">
-            <header class="blogTitle">Title</header>
-            <div class="blogBody">body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body </div>
-            <footer class="blogFooter">Footer footer footer</footer>
-        </div>
-        <div class="blogPost">
-            <header class="blogTitle">Title</header>
-            <div class="blogBody">body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body </div>
-            <footer class="blogFooter">Footer footer footer</footer>
-        </div>
-        <div class="blogPost">
-            <header class="blogTitle">Title</header>
-            <div class="blogBody">body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body </div>
-            <footer class="blogFooter">Footer footer footer</footer>
-        </div>
-        <div class="blogPost">
-            <header class="blogTitle">Title</header>
-            <div class="blogBody">body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body </div>
-            <footer class="blogFooter">Footer footer footer</footer>
-        </div>
-        <div class="blogPost">
-            <header class="blogTitle">Title</header>
-            <div class="blogBody">body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body </div>
-            <footer class="blogFooter">Footer footer footer</footer>
-        </div>
-        <div class="blogPost">
-            <header class="blogTitle">Title</header>
-            <div class="blogBody">body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body </div>
-            <footer class="blogFooter">Footer footer footer</footer>
-        </div>
-        <div class="blogPost">
-            <header class="blogTitle">Title</header>
-            <div class="blogBody">body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body </div>
-            <footer class="blogFooter">Footer footer footer</footer>
-        </div>
+        
     </div>
-    <div id="footer"></div>
+    <footer id="footer"></footer>
 </body>
 </html>

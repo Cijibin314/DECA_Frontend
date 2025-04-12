@@ -19,3 +19,6 @@ function members(){
 function login(){
     goto("../login/index.html");
 }
+function sponsors(){
+    goto("../sponsors/index.html");
+}

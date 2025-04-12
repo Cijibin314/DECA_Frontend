@@ -30,14 +30,14 @@ body {
 }
 
 /* Advisors and Students Sections */
-#advisors, #students {
+section {
     display: flex;
     flex-direction: column;
     margin-bottom: 40px;
 }
 
 /* Adjusting the Color of the Bars */
-#advisors > #bar, #students > #bar {
+.bar {
     display: flex;
     background-color: #d1d1d1;  /* Lighter gray for less contrast */
     flex-direction: row;
@@ -48,7 +48,7 @@ body {
 }
 
 /* Advisors and Students People Section */
-#advisors > #people, #students > #people {
+.people {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -58,7 +58,7 @@ body {
 }
 
 /* Individual Member Boxes */
-#advisors > #people > div, #students > #people > div {
+.people > div {
     text-align: center;
     background-color: #e1e1e1;
     padding: 20px;
@@ -67,7 +67,7 @@ body {
     transition: transform 0.3s ease;
 }
 
-#advisors > #people > div:hover, #students > #people > div:hover {
+.people > div:hover {
     transform: scale(1.05);  /* Slight scale effect on hover */
 }
 

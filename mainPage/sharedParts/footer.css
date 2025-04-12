@@ -1,7 +1,84 @@
-#footer{
-    width:100%;
-    height:150px;
-    background-color: gray;
-    position:relative;
-    display:flex;
+#footer {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  gap: 20px;
+  min-height: 120px;
+  width: 100%; /* ⬅️ Add this line */
+  box-sizing: border-box;
+}
+#bar{
+  width: 100%;
+  box-sizing: border-box;
+}
+/* Sponsor section */
+.footer-sponsors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-right: 200px; /* reserve space for socials */
+}
+
+#sponsorTitle {
+  font-size: 1.2rem;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.footer-sponsors .sponsor {
+  background-color: #555;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+/* Social buttons */
+#footer-socials {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.social-button {
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  background-color: #ff7300;
+  transition: background 0.3s ease;
+  white-space: nowrap;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  #footer {
+    flex-direction: column;
+    align-items: stretch;
+    padding-bottom: 80px; /* reserve space for socials */
+  }
+
+  .footer-sponsors {
+    padding-right: 0;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #footer-socials {
+    position: static;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+  }
 }
