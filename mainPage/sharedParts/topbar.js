@@ -22,3 +22,6 @@ function login(){
 function sponsors(){
     goto("../sponsors/index.html");
 }
+function shop(){
+    home();
+}

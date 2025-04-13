@@ -81,6 +81,33 @@ p {
     font-size: 1rem;
     color: #555;
 }
+/* More Students Section */
+#more-students .name-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.student-name {
+    background-color: #e1e1e1;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+.student-grade{
+    color:#555;
+    font-weight: lighter;
+}
+
+.student-name:hover {
+    transform: scale(1.05);
+}
 
 /* Responsive Design for Smaller Screens */
 @media (max-width: 768px) {
@@ -100,5 +127,9 @@ p {
     #advisors > #people > div, #students > #people > div {
         width: 80%;
         margin-bottom: 30px;
+    }
+    .student-name {
+        width: 100%;
+        text-align: center;
     }
 }
