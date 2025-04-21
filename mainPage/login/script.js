@@ -20,7 +20,7 @@ function start() {
             if (data.valid) {
                 document.getElementById("login-loader").style.display = "none";
                 errorMessage.style.display = 'none'; // Hide error message if valid
-                window.location.href = "https://cijibin314.github.io/DECA_Students/"
+                window.location.href = "../../studentsPage/index.html"
             } else {
                 document.getElementById("login-loader").style.display = "none";
                 errorMessage.style.display = 'block'; // Show error message if invalid
